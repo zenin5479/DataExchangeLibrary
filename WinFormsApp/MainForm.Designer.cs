@@ -34,7 +34,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(800, 450);
+         ClientSize = new System.Drawing.Size(573, 421);
          Name = "MainForm";
          Text = "Система обмена данными с консолью";
          ResumeLayout(false);
