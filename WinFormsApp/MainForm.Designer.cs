@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
          dgvPeople = new System.Windows.Forms.DataGridView();
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,7 +36,6 @@
          Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          panelBottom = new System.Windows.Forms.Panel();
-         lblConsoleMessage = new System.Windows.Forms.Label();
          lblTotalCount = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          panelTop = new System.Windows.Forms.Panel();
@@ -78,9 +77,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle2.Format = "C0";
-         dataGridViewCellStyle2.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle2;
+         dataGridViewCellStyle4.Format = "C0";
+         dataGridViewCellStyle4.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle4;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -92,22 +91,12 @@
          // 
          // panelBottom
          // 
-         panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(212, 168);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 65);
+         panelBottom.Size = new System.Drawing.Size(180, 45);
          panelBottom.TabIndex = 4;
-         // 
-         // lblConsoleMessage
-         // 
-         lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
-         lblConsoleMessage.Name = "lblConsoleMessage";
-         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
-         lblConsoleMessage.TabIndex = 9;
-         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // lblTotalCount
          // 
@@ -201,7 +190,6 @@
       private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
       private System.Windows.Forms.Panel panelBottom;
-      private System.Windows.Forms.Label lblConsoleMessage;
       private System.Windows.Forms.Label lblTotalCount;
       private System.Windows.Forms.Label lblAvgSalary;
       private System.Windows.Forms.Panel panelTop;
