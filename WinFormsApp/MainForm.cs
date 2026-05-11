@@ -13,7 +13,7 @@ namespace WinFormsApp
          RefreshDataGrid();
          UpdateStatus();
       }
-      private void btnAddPerson_Click_1(object sender, EventArgs e)
+      private void btnAddPerson_Click(object sender, EventArgs e)
       {
          using (PersonInputDialog inputDialog = new PersonInputDialog())
          {
@@ -28,7 +28,7 @@ namespace WinFormsApp
          }
       }
 
-      private void btnDeleteSelected_Click(object sender, EventArgs e)
+      private void btnDeleteSelected_Click_1(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
          {

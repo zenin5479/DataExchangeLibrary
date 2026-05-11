@@ -133,7 +133,7 @@
          btnAddPerson.TabIndex = 3;
          btnAddPerson.Text = "➕ Добавить";
          btnAddPerson.UseVisualStyleBackColor = true;
-         btnAddPerson.Click += btnAddPerson_Click_1;
+         btnAddPerson.Click += btnAddPerson_Click;
          // 
          // btnDeleteSelected
          // 
@@ -143,6 +143,7 @@
          btnDeleteSelected.TabIndex = 5;
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
+         btnDeleteSelected.Click += btnDeleteSelected_Click_1;
          // 
          // btnEditSelected
          // 
