@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
          dgvPeople = new System.Windows.Forms.DataGridView();
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +56,7 @@
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(572, 150);
+         dgvPeople.Size = new System.Drawing.Size(575, 150);
          dgvPeople.TabIndex = 5;
          // 
          // Column1
@@ -78,9 +78,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle1.Format = "C0";
-         dataGridViewCellStyle1.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle2.Format = "C0";
+         dataGridViewCellStyle2.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle2;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -178,11 +178,12 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(734, 421);
+         ClientSize = new System.Drawing.Size(599, 271);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
          Name = "MainForm";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Система обмена данными с консолью";
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          panelBottom.ResumeLayout(false);
