@@ -143,7 +143,7 @@
          btnDeleteSelected.TabIndex = 5;
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
-         btnDeleteSelected.Click += btnDeleteSelected_Click_1;
+         btnDeleteSelected.Click += btnDeleteSelected_Click;
          // 
          // btnEditSelected
          // 
