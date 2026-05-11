@@ -32,7 +32,7 @@ namespace WinFormsApp
          }
       }
 
-      private void btnOk_Click_1(object sender, EventArgs e)
+      private void btnOk_Click(object sender, EventArgs e)
       {
          if (string.IsNullOrWhiteSpace(txtName.Text))
          {
