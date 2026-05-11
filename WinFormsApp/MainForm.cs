@@ -1,9 +1,9 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using ClassLibrary;
 
 namespace WinFormsApp
 {
@@ -161,7 +161,7 @@ namespace WinFormsApp
          }
       }
 
-      private void FormFour_Load(object sender, EventArgs e)
+      private void MainForm_Load(object sender, EventArgs e)
       {
          // Добавляем тестовые данные при первом запуске
          if (GlobalStorage.TotalPeopleCount == 0)
