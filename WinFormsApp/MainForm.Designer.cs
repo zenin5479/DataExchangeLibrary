@@ -153,6 +153,7 @@
          btnEditSelected.TabIndex = 6;
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
+         btnEditSelected.Click += btnEditSelected_Click_1;
          // 
          // MainForm
          // 
