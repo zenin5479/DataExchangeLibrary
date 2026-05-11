@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DataExchangeLibrary", "DataExchangeLibrary.shproj", "{A74EA6C3-6F74-4397-9107-9F65710825D5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{FB1FF0FE-DFFA-4142-B940-34914C88FB46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{FB1FF0FE-DFFA-4142-B940-34914C88FB46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +21,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2701C900-042E-4AF1-89C9-4CB09AA08229}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		DataExchangeLibrary.projitems*{a74ea6c3-6f74-4397-9107-9f65710825d5}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
