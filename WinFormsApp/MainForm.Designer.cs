@@ -40,7 +40,6 @@
          lblAvgSalary = new System.Windows.Forms.Label();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
-         btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -119,7 +118,6 @@
          // panelTop
          // 
          panelTop.Controls.Add(btnAddPerson);
-         panelTop.Controls.Add(btnRunConsole);
          panelTop.Controls.Add(btnDeleteSelected);
          panelTop.Controls.Add(btnEditSelected);
          panelTop.Location = new System.Drawing.Point(12, 168);
@@ -135,15 +133,6 @@
          btnAddPerson.TabIndex = 3;
          btnAddPerson.Text = "➕ Добавить";
          btnAddPerson.UseVisualStyleBackColor = true;
-         // 
-         // btnRunConsole
-         // 
-         btnRunConsole.Location = new System.Drawing.Point(3, 3);
-         btnRunConsole.Name = "btnRunConsole";
-         btnRunConsole.Size = new System.Drawing.Size(135, 23);
-         btnRunConsole.TabIndex = 4;
-         btnRunConsole.Text = "▶ Запустить консоль";
-         btnRunConsole.UseVisualStyleBackColor = true;
          // 
          // btnDeleteSelected
          // 
@@ -195,7 +184,6 @@
       private System.Windows.Forms.Label lblAvgSalary;
       private System.Windows.Forms.Panel panelTop;
       private System.Windows.Forms.Button btnAddPerson;
-      private System.Windows.Forms.Button btnRunConsole;
       private System.Windows.Forms.Button btnDeleteSelected;
       private System.Windows.Forms.Button btnEditSelected;
    }
