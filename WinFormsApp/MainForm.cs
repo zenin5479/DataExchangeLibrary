@@ -1,7 +1,5 @@
 ﻿using ClassLibrary;
 using System;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -15,8 +13,7 @@ namespace WinFormsApp
          RefreshDataGrid();
          UpdateStatus();
       }
-
-      private void btnAddPerson_Click(object sender, EventArgs e)
+      private void btnAddPerson_Click_1(object sender, EventArgs e)
       {
          using (PersonInputDialog inputDialog = new PersonInputDialog())
          {
@@ -143,5 +140,7 @@ namespace WinFormsApp
             UpdateStatus();
          }
       }
+
+
    }
 }
