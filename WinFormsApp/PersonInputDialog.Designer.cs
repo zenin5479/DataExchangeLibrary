@@ -131,6 +131,7 @@
          Controls.Add(label1);
          Controls.Add(dtpBirth);
          Name = "PersonInputDialog";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Добавление человека";
          ((System.ComponentModel.ISupportInitialize)numSalary).EndInit();
          ResumeLayout(false);
