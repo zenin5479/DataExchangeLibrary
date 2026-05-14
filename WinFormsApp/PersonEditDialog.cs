@@ -1,10 +1,18 @@
-﻿using ClassLibrary;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
 
 namespace WinFormsApp
 {
-   // PersonEditDialog можно удалить, используя PersonInputDialog с параметром
-   public class PersonEditDialog : PersonInputDialog
+   public partial class PersonEditDialog : Form
    {
-      public PersonEditDialog(Person person) : base(person) { }
+      public PersonEditDialog()
+      {
+         InitializeComponent();
+      }
    }
 }
