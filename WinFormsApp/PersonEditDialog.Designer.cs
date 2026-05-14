@@ -130,7 +130,7 @@
          Controls.Add(label1);
          Controls.Add(dtpBirth);
          Name = "PersonEditDialog";
-         Text = "PersonEditDialog";
+         Text = "Редактирование человека";
          ((System.ComponentModel.ISupportInitialize)numSalary).EndInit();
          ResumeLayout(false);
          PerformLayout();
