@@ -61,7 +61,7 @@ namespace WinFormsApp
          }
       }
 
-      private void btnEditSelected_Click_1(object sender, EventArgs e)
+      private void btnEditSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
          {
