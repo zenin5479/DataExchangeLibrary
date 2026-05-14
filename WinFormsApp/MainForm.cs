@@ -142,7 +142,5 @@ namespace WinFormsApp
             lblAvgSalary.Text = @"Средняя ЗП: 0";
          }
       }
-
-
    }
 }

@@ -17,9 +17,6 @@ namespace ClassLibrary
          AllPeople.Add(person);
       }
 
-      // Данные для обмена между приложениями
-      public static string LastConsoleOutput { get; set; }
-
       // Статистика
       public static int TotalPeopleCount
       {
