@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
          dgvPeople = new System.Windows.Forms.DataGridView();
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,9 +78,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle1.Format = "C0";
-         dataGridViewCellStyle1.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle2.Format = "C0";
+         dataGridViewCellStyle2.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle2;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -164,7 +164,7 @@
          Controls.Add(panelTop);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Система обмена данными с консолью";
+         Text = "Система обмена данными с библиотекой классов";
          Load += MainForm_Load;
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          panelBottom.ResumeLayout(false);
