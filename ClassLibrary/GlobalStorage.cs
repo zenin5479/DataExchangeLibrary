@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ClassLibraryFour
+namespace ClassLibrary
 {
    public static class GlobalStorage
    {
