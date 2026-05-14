@@ -31,7 +31,6 @@
          label4 = new System.Windows.Forms.Label();
          label3 = new System.Windows.Forms.Label();
          label2 = new System.Windows.Forms.Label();
-         btnCancel = new System.Windows.Forms.Button();
          btnOk = new System.Windows.Forms.Button();
          txtSkills = new System.Windows.Forms.TextBox();
          numSalary = new System.Windows.Forms.NumericUpDown();
@@ -44,76 +43,66 @@
          // label4
          // 
          label4.AutoSize = true;
-         label4.Location = new System.Drawing.Point(12, 105);
+         label4.Location = new System.Drawing.Point(12, 102);
          label4.Name = "label4";
          label4.Size = new System.Drawing.Size(53, 15);
-         label4.TabIndex = 19;
+         label4.TabIndex = 18;
          label4.Text = "Навыки:";
          // 
          // label3
          // 
          label3.AutoSize = true;
-         label3.Location = new System.Drawing.Point(12, 75);
+         label3.Location = new System.Drawing.Point(12, 72);
          label3.Name = "label3";
          label3.Size = new System.Drawing.Size(61, 15);
-         label3.TabIndex = 18;
+         label3.TabIndex = 17;
          label3.Text = "Зарплата:";
          // 
          // label2
          // 
          label2.AutoSize = true;
-         label2.Location = new System.Drawing.Point(12, 50);
+         label2.Location = new System.Drawing.Point(12, 47);
          label2.Name = "label2";
          label2.Size = new System.Drawing.Size(93, 15);
-         label2.TabIndex = 17;
+         label2.TabIndex = 16;
          label2.Text = "Дата рождения:";
-         // 
-         // btnCancel
-         // 
-         btnCancel.Location = new System.Drawing.Point(93, 131);
-         btnCancel.Name = "btnCancel";
-         btnCancel.Size = new System.Drawing.Size(75, 23);
-         btnCancel.TabIndex = 16;
-         btnCancel.Text = "Отмена";
-         btnCancel.UseVisualStyleBackColor = true;
          // 
          // btnOk
          // 
-         btnOk.Location = new System.Drawing.Point(12, 131);
+         btnOk.Location = new System.Drawing.Point(12, 128);
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 15;
-         btnOk.Text = "Ok";
+         btnOk.Text = "Добавить";
          btnOk.UseVisualStyleBackColor = true;
-         btnOk.Click += btnOk_Click;
          // 
          // txtSkills
          // 
-         txtSkills.Location = new System.Drawing.Point(71, 102);
+         txtSkills.Location = new System.Drawing.Point(71, 99);
          txtSkills.Name = "txtSkills";
          txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
-         txtSkills.Size = new System.Drawing.Size(240, 23);
+         txtSkills.Size = new System.Drawing.Size(243, 23);
          txtSkills.TabIndex = 14;
          // 
          // numSalary
          // 
-         numSalary.Location = new System.Drawing.Point(79, 73);
+         numSalary.Location = new System.Drawing.Point(79, 70);
          numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
-         numSalary.Size = new System.Drawing.Size(232, 23);
+         numSalary.Size = new System.Drawing.Size(235, 23);
          numSalary.TabIndex = 13;
          // 
          // txtName
          // 
-         txtName.Location = new System.Drawing.Point(52, 15);
+         txtName.Location = new System.Drawing.Point(52, 12);
          txtName.Name = "txtName";
-         txtName.Size = new System.Drawing.Size(259, 23);
+         txtName.Size = new System.Drawing.Size(262, 23);
          txtName.TabIndex = 12;
          // 
          // label1
          // 
          label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(12, 18);
+         label1.Location = new System.Drawing.Point(12, 15);
          label1.Name = "label1";
          label1.Size = new System.Drawing.Size(34, 15);
          label1.TabIndex = 11;
@@ -121,20 +110,19 @@
          // 
          // dtpBirth
          // 
-         dtpBirth.Location = new System.Drawing.Point(111, 44);
+         dtpBirth.Location = new System.Drawing.Point(111, 41);
          dtpBirth.Name = "dtpBirth";
-         dtpBirth.Size = new System.Drawing.Size(200, 23);
+         dtpBirth.Size = new System.Drawing.Size(203, 23);
          dtpBirth.TabIndex = 10;
          // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(326, 161);
+         ClientSize = new System.Drawing.Size(326, 243);
          Controls.Add(label4);
          Controls.Add(label3);
          Controls.Add(label2);
-         Controls.Add(btnCancel);
          Controls.Add(btnOk);
          Controls.Add(txtSkills);
          Controls.Add(numSalary);
@@ -153,7 +141,6 @@
       private System.Windows.Forms.Label label4;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label2;
-      private System.Windows.Forms.Button btnCancel;
       private System.Windows.Forms.Button btnOk;
       private System.Windows.Forms.TextBox txtSkills;
       private System.Windows.Forms.NumericUpDown numSalary;
