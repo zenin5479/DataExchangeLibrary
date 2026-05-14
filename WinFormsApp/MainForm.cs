@@ -61,6 +61,9 @@ namespace WinFormsApp
          }
       }
 
+
+
+
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
