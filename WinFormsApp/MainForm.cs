@@ -61,8 +61,28 @@ namespace WinFormsApp
          }
       }
 
+      private void btnEditSelected_Click_1(object sender, EventArgs e)
+      {
+         if (dgvPeople.CurrentRow == null)
+         {
+            return;
+         }
 
-
+         Person person = (Person)dgvPeople.CurrentRow.Tag;
+         if (person != null)
+         {
+            using (var editDialog = new PersonEditDialog(person))
+            {
+               if (editDialog.ShowDialog() == DialogResult.OK)
+               {
+                  // Обновляем строку в DataGrid
+                  RefreshDataGrid();
+                  // Обновляем статусную строку
+                  UpdateStatus();
+               }
+            }
+         }
+      }
 
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
@@ -88,25 +108,7 @@ namespace WinFormsApp
 
       private void btnEditSelected_Click(object sender, EventArgs e)
       {
-         if (dgvPeople.CurrentRow == null)
-         {
-            return;
-         }
 
-         Person person = (Person)dgvPeople.CurrentRow.Tag;
-         if (person != null)
-         {
-            using (var editDialog = new PersonEditDialog(person))
-            {
-               if (editDialog.ShowDialog() == DialogResult.OK)
-               {
-                  // Обновляем строку в DataGrid
-                  RefreshDataGrid();
-                  // Обновляем статусную строку
-                  UpdateStatus();
-               }
-            }
-         }
       }
 
       private void RefreshDataGrid()
