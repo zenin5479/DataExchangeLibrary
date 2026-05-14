@@ -106,11 +106,6 @@ namespace WinFormsApp
          }
       }
 
-      private void btnEditSelected_Click(object sender, EventArgs e)
-      {
-
-      }
-
       private void RefreshDataGrid()
       {
          // Очищаем все строки
