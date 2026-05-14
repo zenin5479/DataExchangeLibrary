@@ -49,12 +49,14 @@
          // 
          // dgvPeople
          // 
+         dgvPeople.AllowUserToAddRows = false;
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
+         dgvPeople.RowHeadersVisible = false;
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(575, 150);
+         dgvPeople.Size = new System.Drawing.Size(572, 150);
          dgvPeople.TabIndex = 5;
          // 
          // Column1
@@ -94,13 +96,13 @@
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(212, 168);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(180, 45);
+         panelBottom.Size = new System.Drawing.Size(150, 40);
          panelBottom.TabIndex = 4;
          // 
          // lblTotalCount
          // 
          lblTotalCount.AutoSize = true;
-         lblTotalCount.Location = new System.Drawing.Point(3, 11);
+         lblTotalCount.Location = new System.Drawing.Point(3, 4);
          lblTotalCount.Name = "lblTotalCount";
          lblTotalCount.Size = new System.Drawing.Size(89, 15);
          lblTotalCount.TabIndex = 7;
@@ -109,7 +111,7 @@
          // lblAvgSalary
          // 
          lblAvgSalary.AutoSize = true;
-         lblAvgSalary.Location = new System.Drawing.Point(3, 26);
+         lblAvgSalary.Location = new System.Drawing.Point(3, 19);
          lblAvgSalary.Name = "lblAvgSalary";
          lblAvgSalary.Size = new System.Drawing.Size(84, 15);
          lblAvgSalary.TabIndex = 8;
@@ -122,44 +124,41 @@
          panelTop.Controls.Add(btnEditSelected);
          panelTop.Location = new System.Drawing.Point(12, 168);
          panelTop.Name = "panelTop";
-         panelTop.Size = new System.Drawing.Size(194, 90);
+         panelTop.Size = new System.Drawing.Size(194, 61);
          panelTop.TabIndex = 3;
          // 
          // btnAddPerson
          // 
-         btnAddPerson.Location = new System.Drawing.Point(3, 32);
+         btnAddPerson.Location = new System.Drawing.Point(3, 3);
          btnAddPerson.Name = "btnAddPerson";
          btnAddPerson.Size = new System.Drawing.Size(90, 23);
          btnAddPerson.TabIndex = 3;
          btnAddPerson.Text = "➕ Добавить";
          btnAddPerson.UseVisualStyleBackColor = true;
-         btnAddPerson.Click += btnAddPerson_Click;
          // 
          // btnDeleteSelected
          // 
-         btnDeleteSelected.Location = new System.Drawing.Point(99, 32);
+         btnDeleteSelected.Location = new System.Drawing.Point(99, 3);
          btnDeleteSelected.Name = "btnDeleteSelected";
          btnDeleteSelected.Size = new System.Drawing.Size(90, 23);
          btnDeleteSelected.TabIndex = 5;
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
-         btnDeleteSelected.Click += btnDeleteSelected_Click;
          // 
          // btnEditSelected
          // 
-         btnEditSelected.Location = new System.Drawing.Point(3, 61);
+         btnEditSelected.Location = new System.Drawing.Point(3, 32);
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
-         btnEditSelected.Click += btnEditSelected_Click;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(599, 271);
+         ClientSize = new System.Drawing.Size(783, 418);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
