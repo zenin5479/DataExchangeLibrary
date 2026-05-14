@@ -46,7 +46,7 @@ namespace WinFormsApp
          }
       }
 
-      private void btnAddPerson_Click_1(object sender, EventArgs e)
+      private void btnAddPerson_Click(object sender, EventArgs e)
       {
          using (PersonInputDialog inputDialog = new PersonInputDialog())
          {
