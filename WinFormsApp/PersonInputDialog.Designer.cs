@@ -75,6 +75,7 @@
          btnOk.TabIndex = 15;
          btnOk.Text = "Добавить";
          btnOk.UseVisualStyleBackColor = true;
+         btnOk.Click += btnOk_Click_1;
          // 
          // txtSkills
          // 

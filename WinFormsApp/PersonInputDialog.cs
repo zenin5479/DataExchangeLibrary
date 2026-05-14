@@ -1,6 +1,6 @@
 ﻿using ClassLibrary;
 using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace WinFormsApp
@@ -15,52 +15,34 @@ namespace WinFormsApp
          InitializeComponent();
 
          _editPerson = editPerson;
-
-         if (_editPerson != null)
-         {
-            Text = "Редактирование человека";
-            txtName.Text = _editPerson.Name;
-            dtpBirth.Value = _editPerson.BirthDate;
-            numSalary.Value = _editPerson.Salary;
-            txtSkills.Text = string.Join(", ", _editPerson.Skills);
-            btnOk.Text = "Сохранить";
-         }
-         else
-         {
-            Text = "Добавление человека";
-            btnOk.Text = "Добавить";
-         }
       }
 
-      private void btnOk_Click(object sender, EventArgs e)
+      private void btnOk_Click_1(object sender, EventArgs e)
       {
          if (string.IsNullOrWhiteSpace(txtName.Text))
          {
-            MessageBox.Show("Введите имя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(@"Введите имя!", @"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return;
          }
 
-         if (_editPerson != null)
-         {
-            // Редактирование существующего
-            _editPerson.Name = txtName.Text;
-            _editPerson.BirthDate = dtpBirth.Value;
-            _editPerson.Salary = numSalary.Value;
-            _editPerson.Skills.Clear();
-            foreach (var skill in txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-               _editPerson.Skills.Add(skill.Trim());
-            CreatedPerson = _editPerson;
-         }
-         else
+         if (_editPerson == null)
          {
             // Создание нового
+            List<string> list = new List<string>();
+            int index = 0;
+            while (index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length)
+            {
+               string s = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[index];
+               list.Add(s.Trim());
+               index++;
+            }
+
             CreatedPerson = new Person
             {
                Name = txtName.Text,
                BirthDate = dtpBirth.Value,
                Salary = numSalary.Value,
-               Skills = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-                  .Select(s => s.Trim()).ToList()
+               Skills = list
             };
          }
 
