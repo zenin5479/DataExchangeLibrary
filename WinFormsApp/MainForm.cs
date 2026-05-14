@@ -14,6 +14,38 @@ namespace WinFormsApp
          UpdateStatus();
       }
 
+      private void MainForm_Load(object sender, EventArgs e)
+      {
+         // Добавляем тестовые данные при первом запуске
+         if (GlobalStorage.TotalPeopleCount == 0)
+         {
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Лев Ткачук",
+               BirthDate = new DateTime(1990, 5, 20),
+               Salary = 87000,
+               Skills = { "C#", "SQL" }
+            });
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Татьяна Свиридова",
+               BirthDate = new DateTime(1988, 12, 10),
+               Salary = 119000,
+               Skills = { "Java", "Python" }
+            });
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Надежда Белова",
+               BirthDate = new DateTime(1996, 10, 21),
+               Salary = 137000,
+               Skills = { "C++", "HTML" }
+            });
+
+            RefreshDataGrid();
+            UpdateStatus();
+         }
+      }
+
       private void btnAddPerson_Click(object sender, EventArgs e)
       {
          using (PersonInputDialog inputDialog = new PersonInputDialog())
@@ -109,39 +141,6 @@ namespace WinFormsApp
          else
          {
             lblAvgSalary.Text = @"Средняя ЗП: 0";
-         }
-      }
-
-      private void MainForm_Load(object sender, EventArgs e)
-      {
-
-         // Добавляем тестовые данные при первом запуске
-         if (GlobalStorage.TotalPeopleCount == 0)
-         {
-            GlobalStorage.AddPerson(new Person
-            {
-               Name = "Лев Ткачук",
-               BirthDate = new DateTime(1990, 5, 20),
-               Salary = 87000,
-               Skills = { "C#", "SQL" }
-            });
-            GlobalStorage.AddPerson(new Person
-            {
-               Name = "Татьяна Свиридова",
-               BirthDate = new DateTime(1988, 12, 10),
-               Salary = 119000,
-               Skills = { "Java", "Python" }
-            });
-            GlobalStorage.AddPerson(new Person
-            {
-               Name = "Надежда Белова",
-               BirthDate = new DateTime(1996, 10, 21),
-               Salary = 137000,
-               Skills = { "C++", "HTML" }
-            });
-
-            RefreshDataGrid();
-            UpdateStatus();
          }
       }
    }
