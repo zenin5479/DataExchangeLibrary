@@ -46,7 +46,7 @@ namespace WinFormsApp
          }
       }
 
-      private void btnAddPerson_Click(object sender, EventArgs e)
+      private void btnAddPerson_Click_1(object sender, EventArgs e)
       {
          using (PersonInputDialog inputDialog = new PersonInputDialog())
          {
@@ -59,6 +59,11 @@ namespace WinFormsApp
                   MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
          }
+      }
+
+      private void btnAddPerson_Click(object sender, EventArgs e)
+      {
+
       }
 
       private void btnDeleteSelected_Click(object sender, EventArgs e)
@@ -141,5 +146,7 @@ namespace WinFormsApp
             lblAvgSalary.Text = @"Средняя ЗП: 0";
          }
       }
+
+
    }
 }
