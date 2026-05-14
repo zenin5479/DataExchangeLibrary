@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using ClassLibrary;
 
 namespace WinFormsApp
 {
