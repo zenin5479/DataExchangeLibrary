@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ClassLibrary
+namespace ClassLibraryFour
 {
    public static class GlobalStorage
    {
@@ -24,14 +24,6 @@ namespace ClassLibrary
       public static int TotalPeopleCount
       {
          get { return AllPeople.Count; }
-      }
-
-      // Сброс данных (для тестов)
-      public static void Reset()
-      {
-         AllPeople.Clear();
-         _nextId = 1;
-         LastConsoleOutput = null;
       }
    }
 }
