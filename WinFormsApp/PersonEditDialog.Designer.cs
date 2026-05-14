@@ -75,7 +75,7 @@
          btnOk.TabIndex = 25;
          btnOk.Text = "Сохранить";
          btnOk.UseVisualStyleBackColor = true;
-         btnOk.Click += btnOk_Click_1;
+         btnOk.Click += btnOk_Click;
          // 
          // txtSkills
          // 
