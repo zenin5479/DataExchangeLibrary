@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
          dgvPeople = new System.Windows.Forms.DataGridView();
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,9 +78,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle2.Format = "C0";
-         dataGridViewCellStyle2.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle2;
+         dataGridViewCellStyle3.Format = "C0";
+         dataGridViewCellStyle3.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle3;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -158,7 +158,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(783, 418);
+         ClientSize = new System.Drawing.Size(596, 418);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
