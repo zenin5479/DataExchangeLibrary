@@ -61,11 +61,6 @@ namespace WinFormsApp
          }
       }
 
-      private void btnAddPerson_Click(object sender, EventArgs e)
-      {
-
-      }
-
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
